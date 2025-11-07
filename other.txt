@@ -1,0 +1,19 @@
+<div class="project-card">
+          <img src="assets/images/programming-1873854_1280.png" alt="">
+          <h3>ATM Simulator</h3>
+          <p>A command-line interface program that simulates the core functions of an Automated Teller Machine. Users
+            can check balances, deposit, withdraw, and view transaction histories in a secure and interactive way.
+          </p>
+          <a href="https://github.com/Py-Me23/ATM_Simulator_CLI_Python_prog" target="_blank" class="btn">Review
+            Project</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/images/wordpress-923188_1280.jpg" alt="">
+          <h3>Portfolio Website</h3>
+          <p>I designed and developed this portfolio website using HTML, CSS, and JavaScript to showcase my skills and
+            projects. It features a clean, responsive layout with an interactive user experience that reflects my
+            passion for web development and design.
+
+          </p>
+          <a href="https://github.com/Py-Me23/portfolio-website" target="_blank" class="btn">Review Project</a>
+        </div>
