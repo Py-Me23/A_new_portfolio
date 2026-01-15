@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap");
 
 * {
   padding: 0;
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   box-sizing: border-box;
   list-style: none;
   scroll-behavior: smooth;
 }
-
-
 
 :root {
   /* Dark Theme Variables */
@@ -27,42 +22,27 @@
   --nav-bg-color: #191919;
 }
 
-body.light-theme {
-  --background-color: #f0f2f5;
-  --card-bg-color: #ffffff;
-  --project-card-bg: #ffffff;
-  --text-color: #333;
-  --logo-color: #191919;
-  --heading-color: teal;
-  --accent-color: teal;
-  --accent-glow-color: turquoise;
-  --nav-bg-color: #f0f2f5;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  transition: background-color 0.4s;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 section {
-  padding: 100px 8%; /* Default padding for all sections */
+  padding: 20px 8%; /* Default padding for all sections */
 }
-
-
-
 
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/WhatsApp Image 2025-11-02 at 18.52.00_ed0de07e.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("assets/images/WhatsApp Image 2025-11-02 at 18.52.00_ed0de07e.jpg");
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -99,15 +79,10 @@ span {
   color: rgb(10, 10, 10);
   font-size: 3em;
   display: none;
-
 }
 
-/* Theme Toggle Icon */
 #theme-toggle {
-  color: var(--text-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin-right: 1rem;
+  display: none;
 }
 
 nav ul li {
@@ -125,7 +100,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: rgb(9, 145, 145);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .btn {
@@ -138,7 +113,6 @@ nav ul li a:hover {
   border-radius: 30px;
   transition: 0.3s ease-in-out;
 }
-
 
 .btn:hover {
   transform: scale(1.2);
@@ -176,29 +150,26 @@ h4 {
 .social-icons a {
   display: inline-flex;
   padding: 8px;
-  border: 2px solid whitesmoke;
+  border: 2px solid var(--text-color);
   border-radius: 50%;
-  font-size: 20px; 
+  font-size: 20px;
   color: var(--text-color);
   text-decoration: none;
   margin: 0 8px;
-
+  transition: 0.3s;
 }
 
 .social-icons a:hover {
-  background: whitesmoke;
-  box-shadow: 0 0 10px white;
-  color: rgb(7, 104, 168);
-
+  background: var(--text-color);
+  box-shadow: 0 0 10px var(--accent-glow-color);
+  color: var(--background-color);
 }
-
-
 
 .about {
   width: 100%;
-  padding: 100px 0px;
+  padding: 20px 0px;
   background-color: var(--background-color);
-  gap: 5em;
+  gap: 2em;
 }
 
 .about img {
@@ -255,7 +226,7 @@ button {
   font-weight: bold;
   padding: 13px 30px;
   border-radius: 30px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 button:hover {
@@ -264,16 +235,12 @@ button:hover {
   cursor: pointer;
 }
 
-
-
-
 .skills__subtitle {
-  margin-top: 15%;
+  margin-top: 0.5rem;
   font-size: 4em;
   text-align: center;
   margin-bottom: 3%;
 }
-
 
 .skills__container {
   row-gap: 5rem;
@@ -311,7 +278,8 @@ button:hover {
 
 .skills__data:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px var(--accent-glow-color-transparent, rgba(0, 255, 255, 0.2));
+  box-shadow: 0 8px 15px
+    var(--accent-glow-color-transparent, rgba(0, 255, 255, 0.2));
   /* Teal glow */
 }
 
@@ -360,12 +328,16 @@ button:hover {
 }
 
 .skills__img {
-  margin-top: 5%;
+  margin-top: 0.5rem;
   border-radius: 0.5rem;
-
 }
 
-
+#work {
+  background-color: var(--background-color);
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 10;
+}
 
 .work__container {
   display: grid;
@@ -401,13 +373,11 @@ button:hover {
   font-weight: bold;
 }
 
-
-
-
-
 #services {
   background-color: var(--background-color);
-  margin-top: 15%;
+  margin-top: 0rem;
+  padding-top: 0;
+  padding-bottom: 10;
 }
 
 .header {
@@ -451,6 +421,7 @@ button:hover {
   transform: scale(1.03);
   box-shadow: 0 0 15px var(--accent-glow-color);
   /* Teal glow */
+  color: var(--text-color);
 }
 
 .box h1 {
@@ -461,27 +432,34 @@ button:hover {
   font-size: 1.3rem;
   margin: 1rem 0;
   font-weight: 800;
-  color: var(--text-color);
-
+  color: #fff;
+  transition: color 0.3s;
 }
 
+.box:hover h4 {
+  color: var(--text-color);
+}
 
 .box i {
   font-size: 5rem;
 }
 
-
-
 .projects {
   background-color: var(--background-color);
-  margin-top: 10%;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 10;
 }
 
 .projects-box {
   display: grid;
-  grid-template-columns: repeat(4, minmax(280px, 1fr)); /* More flexible for various screen sizes */
+  grid-template-columns: repeat(
+    4,
+    minmax(280px, 1fr)
+  ); /* More flexible for various screen sizes */
   place-items: center;
   gap: 1.5rem;
+  perspective: 1000px;
 }
 
 .project-card {
@@ -494,18 +472,18 @@ button:hover {
   gap: 1rem;
   min-height: 400px;
   padding: 2rem 1rem;
-  overflow: hidden;
   cursor: pointer;
   background: var(--project-card-bg);
   box-shadow: 0 0 5px var(--accent-glow-color);
-  transition: 0.3s ease;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
 .project-card:hover {
   box-shadow: 0 0 25px var(--accent-glow-color),
     0 0 50px var(--accent-glow-color);
-  transform: scale(1.02);
-
+  transform: rotateY(180deg);
 }
 
 .project-card img {
@@ -513,24 +491,36 @@ button:hover {
   border-radius: 2em;
   object-fit: cover;
   position: relative;
+  backface-visibility: hidden;
 }
 
 .project-card h3 {
   font-size: 1.5rem;
+  backface-visibility: hidden;
 }
 
 .project-card p {
   font-size: 1rem;
   color: var(--text-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--project-card-bg);
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 3rem;
 }
-
-
-
-
 
 #contact {
   background-color: var(--background-color);
-  margin-top: 15%;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 form {
@@ -583,11 +573,6 @@ form textarea {
 form input:focus {
   background-color: antiquewhite;
 }
-
-
-
-
-
 
 footer {
   display: flex;
@@ -651,7 +636,7 @@ footer {
 section {
   padding: 100px 8%;
 }
-@media(max-width:1280px) {
+@media (max-width: 1280px) {
   .main {
     width: 90%;
   }
@@ -663,9 +648,9 @@ section {
 }
 
 /* For medium devices */
-@media(max-width:992px) {
+@media (max-width: 992px) {
   section {
-    padding: 80px 5%; /* Adjust section padding */
+    padding: 20px 5%; /* Adjust section padding */
   }
 
   nav {
@@ -691,9 +676,9 @@ section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    text-align: center;
     background: var(--nav-bg-color);
-    transition: all .4s;
+    transition: all 0.4s;
   }
 
   nav ul.active {
@@ -753,7 +738,7 @@ section {
     gap: 2em; /* Reduce gap */
     padding: 3rem 5% 1.5rem; /* Adjust footer padding */
   }
-  
+
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -771,9 +756,9 @@ section {
   }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   section {
-    padding: 60px 4%; /* Further reduced padding */
+    padding: 15px 4%; /* Further reduced padding */
   }
   .content {
     top: 50%;
@@ -796,7 +781,7 @@ section {
 
   .social-icons {
     margin-left: 0;
-    justify-content: center; /* Center hero social icons */ 
+    justify-content: center; /* Center hero social icons */
   }
 
   .about-text h2 {
@@ -857,9 +842,9 @@ section {
   }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
   section {
-    padding: 40px 3%; /* Smallest padding */
+    padding: 10px 3%; /* Smallest padding */
   }
 
   nav {
@@ -1015,7 +1000,7 @@ section {
   right: 2rem;
   background-color: var(--accent-color);
   color: #fff;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 50%;
   font-size: 1.5rem;
   display: inline-flex;
